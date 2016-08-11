@@ -1,0 +1,27 @@
+###########################################################################
+# System zum start definierter VirtualBoxVMs über das System V init-System#
+# (C) 2011 Stefan Schäfer -- invis-server.org	                          #
+# Questions: http://forum.invis-server.org                                #
+# License: GPLv3                                                          #
+# Version: 0.4                                                            #
+###########################################################################
+
+Nutzungshinweise:
+0. Ab  VirtualBox V.4 muss das Erweiterungspaket installiert werden um
+   VRDP nutzen zu können.
+
+1. Zur Installation einfach aus diesem Ordner heraus das setup-Script 
+   ausfuehren.
+   
+2. Konfigurationsdatei unter /etc/vboxinit anpassen. Die Konfigurationsdatei
+   ist einfach aufgebaut und gut erlaeutert.
+
+3. Maschinen ueber /etc/init.d/vboxinit {start:stop:usw.} starten und 
+   stoppen.
+
+Das wars.
+
+Ab Version 0.4 werden VirtualBox Versionen kleiner und größer 4
+unterstützt
+
+Stefan Schaefer

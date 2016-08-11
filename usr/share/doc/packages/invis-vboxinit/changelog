@@ -1,0 +1,6 @@
+Version 0.5
+- Anpassungen in den init-Infos des Startscripts zur Einsortierung in die Runlevel.
+Version 0.4
+- Es werden VirtualBox Versionen größer und kleiner 4 unterstützt,
+  Ab. V4 ist die Installation des Extension-Pakets Voraussetzung.
+  
