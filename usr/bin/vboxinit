@@ -4,9 +4,9 @@
 # Obiger Copyright-Vermerk betrifft lediglich das Grund-
 # gerüst des init-Scripts.
 # (c) 2010 Stefan Schaefer -- FSP Computer & Netzwerke
-# (c) 2011 Stefan Schaefer -- invis-server.org
+# (c) 2011,2016 Stefan Schaefer -- invis-server.org
 # Author: Stefan Schaefer <st-schaefer@fsproductions.de>
-# Version 0.5
+# Version 0.6
 # /etc/init.d/vboxinit
 #   and its symbolic link
 # /usr/sbin/rcvboxinit

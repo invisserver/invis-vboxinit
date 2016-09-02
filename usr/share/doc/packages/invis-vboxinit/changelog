@@ -1,3 +1,5 @@
+Version 0.6
+- Umstellung auf systemd
 Version 0.5
 - Anpassungen in den init-Infos des Startscripts zur Einsortierung in die Runlevel.
 Version 0.4
