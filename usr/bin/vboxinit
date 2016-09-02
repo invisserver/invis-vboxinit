@@ -59,13 +59,13 @@ startvms() {
 	fi
     done < $config
 
-    if (( ${#rvms[*]} == 0 ));then
-	for vm in ${vms[*]}; do
+    if (( "${#rvms[*]}" == 0 ));then
+	for vm in "${vms[*]}"; do
 		echo -e "\nGestartet wird VM: $vm\n"
 		if (( vbversion < 4 )); then
-		    VBoxManage startvm $vm -t vrdp
+		    VBoxManage startvm "$vm" -t vrdp
 		else
-		    VBoxManage startvm $vm -t headless
+		    VBoxManage startvm "$vm" -t headless
 		fi
 		delay=$(cat $config| grep "$vm:"|cut -d ":" -f 3)
 		echo -e "\nWartezeit bis zum Start der nächsten VM: $delay Sekunden"
