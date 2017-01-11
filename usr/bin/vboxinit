@@ -59,8 +59,8 @@ startvms() {
 	fi
     done < $config
 
-    if (( "${#rvms[*]}" == 0 ));then
-	for vm in "${vms[*]}"; do
+    if (( "${#rvms[@]}" == 0 ));then
+	for vm in "${vms[@]}"; do
 		echo -e "\nGestartet wird VM: $vm\n"
 		if (( vbversion < 4 )); then
 		    VBoxManage startvm "$vm" -t vrdp
@@ -72,7 +72,7 @@ startvms() {
 		sleep $delay
 	    done
 	else
-	    echo -e "Es laufen bereits ${#rvms[*]} virtuelle Maschinen\nstarten sie fehlende bitte von Hand mit:\nVBoxManage startvm VM-Name -t vrdp"
+	    echo -e "Es laufen bereits ${#rvms[@]} virtuelle Maschinen\nstarten sie fehlende bitte von Hand mit:\nVBoxManage startvm VM-Name -t vrdp"
 	fi
 }
 
