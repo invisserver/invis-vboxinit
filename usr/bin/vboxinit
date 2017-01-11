@@ -79,7 +79,7 @@ startvms() {
 shutdownvms() {
     # laufende VMs ermitteln
     rvms=($(VBoxManage list runningvms|grep "^\""|cut -d "\"" -f2))
-    for rvm in ${rvms[*]}; do
+    for rvm in ${rvms[@]}; do
 	echo -e "\nGestoppt wird VM: $rvm\n"
 	VBoxManage controlvm $rvm acpipowerbutton
     done
@@ -118,7 +118,7 @@ case "$1" in
 	echo "Forced shutdown of virtual Machines "
 	#laufende vms ermitteln
 	rvms=($(VBoxManage list runningvms|grep "^\""|cut -d "\"" -f2))
-	for rvm in ${rvms[*]}; do
+	for rvm in ${rvms[@]}; do
 	    echo -e "\nGestoppt wird VM: $rvm\n"
 	    VBoxManage controlvm $rvm poweroff
 	done
