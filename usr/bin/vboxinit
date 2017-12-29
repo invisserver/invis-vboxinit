@@ -41,7 +41,7 @@
 rc_reset
 
 PATH="/sbin:/usr/sbin:/bin:/usr/bin"
-config="/etc/vbinit/vboxinit.conf"
+config="/etc/invis/vboxinit.conf"
 
 vbversion=$(VBoxManage -v |cut -d "." -f1)
 
